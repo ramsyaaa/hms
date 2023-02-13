@@ -1,0 +1,55 @@
+.contact-page .information-section .information-block {
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+.contact-page .information-section .information-block .icon-information-box {
+  width: 80px;
+  height: 80px;
+  border-radius: 50px;
+  margin-top: -40px;
+  position: relative;
+  z-index: 1;
+}
+.contact-page .information-section .information-block:nth-child(1) .icon-information-box {
+  background-color: #EBF9F2;
+  color: #3CC47B;
+}
+.contact-page .information-section .information-block:nth-child(2) .icon-information-box {
+  background-color: #FFF4ED;
+  color: #0CA33C;
+}
+.contact-page .information-section .information-block:nth-child(3) .icon-information-box {
+  background-color: #E8F1FE;
+  color: #0CA33C;
+}
+.contact-page .information-section .information-block:nth-child(4) .icon-information-box {
+  background-color: #FEEFF1;
+  color: #F95C6F;
+}
+.contact-page .contact-form-section .contact-form {
+  background-color: #ffffff;
+  padding: 40px;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.08);
+  border-radius: 20px;
+  margin-bottom: -60px;
+}
+.contact-page .contact-form-section .contact-form__input-block {
+  margin-bottom: 20px;
+}
+@media (max-width: 767px) {
+  .contact-page .contact-form-section .contact-form {
+    padding: 20px;
+  }
+}
+.contact-page .contact-form-section .bg-contact-img {
+  background: url(/images/bg-contact.png?5b35b4fb1275dfa9a3c2edf1f5e173f4) no-repeat center;
+  background-size: cover;
+  display: block;
+  padding: 60px 60px 0;
+  border-radius: 20px;
+}
+@media (max-width: 767px) {
+  .contact-page .contact-form-section .bg-contact-img {
+    padding: 20px 20px 0;
+  }
+}

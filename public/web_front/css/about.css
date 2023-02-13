@@ -1,0 +1,70 @@
+.about-page .quality-and-testimonial-section .testimonial-slider .quote-img {
+  top: 30px;
+  right: -20px;
+  width: 60px;
+  height: 60px;
+  background-color: #0CA33C;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 767px) {
+  .about-page .quality-and-testimonial-section .testimonial-slider .quote-img {
+    width: 55px;
+    height: 55px;
+    top: 20px;
+    right: -12px;
+  }
+}
+@media (max-width: 767px) {
+  .about-page .quality-and-testimonial-section .testimonial-slider .quote-img img {
+    max-width: 24px;
+  }
+}
+@media (max-width: 575px) {
+  .about-page .quality-and-testimonial-section .testimonial-slider .quote-img {
+    display: none;
+  }
+}
+.about-page .quality-and-testimonial-section .testimonial-slider .testimonial-img {
+  border: 1px solid #ECECEC;
+  border-radius: 20px;
+}
+.about-page .quality-and-testimonial-section .testimonial-slider .testimonial-img img {
+  width: 100%;
+  border-radius: 20px;
+}
+@media (min-width: 768px) {
+  .about-page .quality-and-testimonial-section .testimonial-slider .testimonial-desc {
+    padding-top: 120px;
+  }
+}
+@media (max-width: 767px) and (min-width: 576px) {
+  .about-page .quality-and-testimonial-section .testimonial-slider .testimonial-desc {
+    padding-left: 20px;
+  }
+}
+.about-page .quality-and-testimonial-section .slick-dots {
+  bottom: -50px;
+}
+@media (max-width: 767px) {
+  .about-page .quality-and-testimonial-section .slick-dots li button {
+    background-color: rgba(22, 30, 84, 0.1) !important;
+  }
+}
+.about-page .professional-doctors-section .card {
+  margin-top: -60px;
+}
+.about-page .professional-doctors-section .doctors-block .card-image {
+  width: 295px;
+  height: 295px;
+  -o-object-fit: cover;
+  object-fit: cover;
+  border-radius: 50%;
+}
+@media (max-width: 1199px) {
+  .about-page .professional-doctors-section .doctors-block .card-image {
+    width: 265px;
+    height: 265px;
+  }
+}

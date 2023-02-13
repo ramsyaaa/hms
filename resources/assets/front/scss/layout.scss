@@ -1,0 +1,244 @@
+@import "../scss/variables.scss";
+
+@font-face {
+    font-family: "Product-sans";
+    src: url(../fonts/product-sans-light.ttf);
+    font-weight: 300;
+    font-style: normal;
+    display: swap;
+}
+
+@font-face {
+    font-family: "Product-sans";
+    src: url(../fonts/product-sans-regular.ttf);
+    font-weight: 400;
+    font-style: normal;
+    display: swap;
+}
+
+@font-face {
+    font-family: "Product-sans";
+    src: url(../fonts/product-sans-bold.ttf);
+    font-weight: 900;
+    font-style: normal;
+    display: swap;
+}
+
+body {
+    font-family: "Product-sans", sans-serif;
+    font-weight: 400;   
+}
+
+header {
+    background-color: $alice-blue-100;
+    padding-top: 25px;
+    padding-bottom: 25px;
+
+    @media (max-width: 991px) {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    @media (max-width: 575px) {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    .header-logo {
+        img {
+            max-width: 50px;
+        }
+    }
+
+    .navbar {
+        @media (max-width: 1199px) {
+            position: static;
+        }
+
+        .navbar-nav {
+            @media (max-width: 1199px) {
+                display: block;
+            }
+
+            .nav-item {
+                position: relative;
+                transition: all 0.3s;
+
+                .nav-link {
+                    padding-right: 20px;
+                    padding-left: 20px;
+                    color: $gray;
+                    white-space: nowrap;
+
+                    @media (max-width: 1399px) and (min-width:1200px) {
+                        padding-right: 12px;
+                        padding-left: 12px;
+                        font-size: 14px;
+                    }
+
+                    &.active {
+                        color: $primary;
+
+                        &::after {
+                            background-color: $primary;
+                        }
+                    }
+
+                    &::after {
+                       content: '';
+                       position: absolute;
+                       width: 15px;
+                       height: 2px;
+                       background-color: transparent; 
+                       left: 20px;
+                       bottom: 8px;
+
+                       @media (max-width: 1399px) and (min-width: 1200px) {
+                            left: 12px;
+                        }
+                    }
+
+                    &:hover {
+                        color: $primary;
+
+                        &::after {
+                            background-color: $primary;
+                        }
+                    }
+             
+                }
+
+                &:last-child {
+                    .nav-link {
+                        @media (min-width: 1400px) {
+                            padding-right: 0;
+                        }
+                    }
+                }
+
+                .submenu {
+                    position: absolute;
+                    min-width: 200px;
+                    width: auto;
+                    padding: 10px;
+                    background: $white;
+                    border-radius: 10px;
+                    height: auto;
+                    display: inline-block;
+                    top: calc(100% - -20px);
+                    left: 12px;
+                    z-index: 1;
+                    opacity: 0;
+                    visibility: hidden;
+                    transition: 00.3s ease-in-out;
+
+                    .nav-item {
+                        &:last-child {
+                            .nav-link {
+                               padding-right: 20px; 
+                            }
+                        }
+                    }
+                }
+
+                &:hover {
+                    .submenu {
+                        opacity: 1;
+                        visibility: visible;
+                        top: calc(100% - 0px);
+                    }
+                }
+
+                .language-menu {
+                    .nav-item {
+                        margin: 5px 0;
+
+                        .nav-link {
+                            line-height: 21px;
+                            &::after {
+                                content: none;
+                            }
+                        }
+                    }
+                    .country-flag {
+                        width: 20px;
+                    }
+                }
+                
+            }
+        }
+
+        .navbar-toggler {
+            @media (max-width: 1199px) {
+                box-shadow: none;
+            }
+        }
+
+        .navbar-collapse {
+            @media (max-width: 1199px) {
+                position: absolute;
+                width: calc(100% - 24px);
+                top: calc(100% - 10px);
+                background: $white;
+                left: 0;
+                right: 0;
+                margin: auto;
+                max-width: 936px;
+                border-radius: 0.625rem;
+                box-shadow: 0 0 20px rgb(173 181 189 / 38%);
+                z-index: 1024;
+            }
+
+            @media (max-width: 767px) {
+                max-width: 516px;
+            }
+        }
+
+        .header-btn-grp {
+            @media (max-width: 1199px) {
+                padding: 20px 20px 6px;
+            }
+
+            .btn {
+                @media (max-width: 1399px) and (min-width: 992px) {
+                    padding: 12px 8px;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+
+footer {
+    background-color: $dark-blue;
+    padding-top: 60px;
+
+    @media (max-width: 991px) {
+        padding-top: 50px;
+    }
+
+    .social-list {
+        margin-top: 60px;
+
+        @media (max-width: 767px) {
+            margin-top: 30px;
+        }
+
+        li {
+            width: 52px;
+            height: 52px;
+            background-color: $primary;
+            border-radius: 50px;
+            margin-right: 20px;
+
+            a {
+                line-height: 12px;
+            }
+        }
+    }
+
+    .copy-right {
+        border-top: 1px solid #DCDCDC;
+        color: #A9A9A9;
+    }
+}

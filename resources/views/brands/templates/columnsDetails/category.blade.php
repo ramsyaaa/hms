@@ -1,0 +1,1 @@
+{{$row->category->name}}

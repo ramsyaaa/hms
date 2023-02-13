@@ -1,0 +1,22 @@
+.doctors-page {
+    .professional-doctors-section {
+        .card {
+            margin-top: -60px;
+        }
+
+        .doctors-block {
+            .card-image {
+                width: 295px;
+                height: 295px;
+                -o-object-fit: cover;
+                object-fit: cover;
+                border-radius: 50%;
+
+                @media (max-width: 1199px) {
+                    width: 265px;
+                    height: 265px;
+                }
+            }
+        }
+    }
+}

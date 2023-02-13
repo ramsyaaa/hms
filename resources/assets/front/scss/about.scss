@@ -1,0 +1,90 @@
+@import "../scss/variables.scss";
+
+.about-page {
+    .testimonial-section {
+        padding-bottom: 120px;
+
+        @media (max-width: 1199px) {
+            padding-bottom: 100px;
+        }
+
+        .quote-img {
+            top: 30px;
+            right: -20px;
+            width: 70px;
+            height: 70px;
+            background-color: $orange;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            @media (max-width: 767px) {
+                width: 55px;
+                height: 55px;
+                top: 20px;
+                right: -12px;
+            }
+
+            img {
+                @media (max-width: 767px) {
+                    max-width: 24px;
+                }
+            }
+
+            @media (max-width: 575px) {
+                display: none;
+            }
+        }
+
+        .testimonial-img {
+            border: 1px solid #ECECEC;
+            border-radius: 20px;
+            height: 290px;
+            overflow: hidden;
+            display: flex;
+            align-items: stretch;
+
+            img {
+                width: 100%;
+                border-radius: 20px;
+                max-width: unset;
+                object-fit: cover;
+            }
+        }
+
+        ul.slick-dots {
+            bottom: -60px;
+        }
+
+        .testimonial-desc {
+            @media (min-width: 768px) {
+                padding-top: 120px;
+            }
+
+            @media (max-width: 767px) and (min-width: 576px){
+                padding-left: 20px;
+            }
+        }
+    }
+    
+    .professional-doctors-section {
+        .card {
+            margin-top: -60px;
+        }
+
+        .doctors-block {
+            .card-image {
+                width: 295px;
+                height: 295px;
+                -o-object-fit: cover;
+                object-fit: cover;
+                border-radius: 50%;
+
+                @media (max-width: 1199px) {
+                    width: 265px;
+                    height: 265px;
+                }
+            }
+        }
+    }
+}

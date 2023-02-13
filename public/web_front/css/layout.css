@@ -1,0 +1,208 @@
+@font-face {
+  font-family: "Product-sans";
+  src: url(/fonts/product-sans-light.ttf?1dde435cdc2a9b6a7130d9eb3a52e17a);
+  font-weight: 300;
+  font-style: normal;
+  display: swap;
+}
+@font-face {
+  font-family: "Product-sans";
+  src: url(/fonts/product-sans-regular.ttf?d165384076551a756b3c6e9b7c074381);
+  font-weight: 400;
+  font-style: normal;
+  display: swap;
+}
+@font-face {
+  font-family: "Product-sans";
+  src: url(/fonts/product-sans-bold.ttf?53df38d5491afbeb42a51441236d428b);
+  font-weight: 900;
+  font-style: normal;
+  display: swap;
+}
+body {
+  font-family: "Product-sans", sans-serif;
+  font-weight: 400;
+}
+
+header {
+  background-color: #F5F8F9;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+@media (max-width: 991px) {
+  header {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
+@media (max-width: 575px) {
+  header {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+}
+header .header-logo img {
+  max-width: 50px;
+}
+@media (max-width: 1199px) {
+  header .navbar {
+    position: static;
+  }
+}
+@media (max-width: 1199px) {
+  header .navbar .navbar-nav {
+    display: block;
+  }
+}
+header .navbar .navbar-nav .nav-item {
+  position: relative;
+  transition: all 0.3s;
+}
+header .navbar .navbar-nav .nav-item .nav-link {
+  padding-right: 20px;
+  padding-left: 20px;
+  color: #909090;
+  white-space: nowrap;
+}
+@media (max-width: 1399px) and (min-width: 1200px) {
+  header .navbar .navbar-nav .nav-item .nav-link {
+    padding-right: 12px;
+    padding-left: 12px;
+    font-size: 14px;
+  }
+}
+header .navbar .navbar-nav .nav-item .nav-link.active {
+  color: #0CA33C;
+}
+header .navbar .navbar-nav .nav-item .nav-link.active::after {
+  background-color: #0CA33C;
+}
+header .navbar .navbar-nav .nav-item .nav-link::after {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 2px;
+  background-color: transparent;
+  left: 20px;
+  bottom: 8px;
+}
+@media (max-width: 1399px) and (min-width: 1200px) {
+  header .navbar .navbar-nav .nav-item .nav-link::after {
+    left: 12px;
+  }
+}
+header .navbar .navbar-nav .nav-item .nav-link:hover {
+  color: #0CA33C;
+}
+header .navbar .navbar-nav .nav-item .nav-link:hover::after {
+  background-color: #0CA33C;
+}
+@media (min-width: 1400px) {
+  header .navbar .navbar-nav .nav-item:last-child .nav-link {
+    padding-right: 0;
+  }
+}
+header .navbar .navbar-nav .nav-item .submenu {
+  position: absolute;
+  min-width: 200px;
+  width: auto;
+  padding: 10px;
+  background: #ffffff;
+  border-radius: 10px;
+  height: auto;
+  display: inline-block;
+  top: calc(100% - -20px);
+  left: 12px;
+  z-index: 1;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s ease-in-out;
+}
+header .navbar .navbar-nav .nav-item .submenu .nav-item:last-child .nav-link {
+  padding-right: 20px;
+}
+header .navbar .navbar-nav .nav-item:hover .submenu {
+  opacity: 1;
+  visibility: visible;
+  top: calc(100% - 0px);
+}
+header .navbar .navbar-nav .nav-item .language-menu .nav-item {
+  margin: 5px 0;
+}
+header .navbar .navbar-nav .nav-item .language-menu .nav-item .nav-link {
+  line-height: 21px;
+}
+header .navbar .navbar-nav .nav-item .language-menu .nav-item .nav-link::after {
+  content: none;
+}
+header .navbar .navbar-nav .nav-item .language-menu .country-flag {
+  width: 20px;
+}
+@media (max-width: 1199px) {
+  header .navbar .navbar-toggler {
+    box-shadow: none;
+  }
+}
+@media (max-width: 1199px) {
+  header .navbar .navbar-collapse {
+    position: absolute;
+    width: calc(100% - 24px);
+    top: calc(100% - 10px);
+    background: #ffffff;
+    left: 0;
+    right: 0;
+    margin: auto;
+    max-width: 936px;
+    border-radius: 0.625rem;
+    box-shadow: 0 0 20px rgba(173, 181, 189, 0.38);
+    z-index: 1024;
+  }
+}
+@media (max-width: 767px) {
+  header .navbar .navbar-collapse {
+    max-width: 516px;
+  }
+}
+@media (max-width: 1199px) {
+  header .navbar .header-btn-grp {
+    padding: 20px 20px 6px;
+  }
+}
+@media (max-width: 1399px) and (min-width: 992px) {
+  header .navbar .header-btn-grp .btn {
+    padding: 12px 8px;
+    font-size: 14px;
+  }
+}
+
+footer {
+  background-color: #0CA33C;
+  padding-top: 60px;
+}
+@media (max-width: 991px) {
+  footer {
+    padding-top: 50px;
+  }
+}
+footer .social-list {
+  margin-top: 60px;
+}
+@media (max-width: 767px) {
+  footer .social-list {
+    margin-top: 30px;
+  }
+}
+footer .social-list li {
+  width: 52px;
+  height: 52px;
+  background-color: #0CA33C;
+  border-radius: 50px;
+  margin-right: 20px;
+}
+footer .social-list li a {
+  line-height: 12px;
+}
+footer .copy-right {
+  border-top: 1px solid #DCDCDC;
+  color: #A9A9A9;
+}

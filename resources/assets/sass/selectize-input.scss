@@ -1,0 +1,93 @@
+.selectize-input {
+    display: block !important;
+    width: 100% !important;
+    //border: none !important;
+    background-color: var(--white-color) !important;
+    border: 1px solid #ececec;
+    height: 50px;
+    padding: 12px 20px;
+    border-radius: 10px;
+    font-size: var(--font-size) !important;
+    font-weight: 400 !important;
+    font-family: var(--heading-font-family) !important;
+    overflow: inherit !important;
+    text-align: start !important;
+    color: #909090 !important;
+    box-shadow: none;
+    
+    &.focus {
+        box-shadow: none; 
+        border-radius: 10px;
+    }
+
+    &.dropdown-active {
+        &:before {
+            content: none;
+        }
+    }
+    
+    input {
+        &::placeholder {
+            color: #909090;
+        }
+    }
+}
+
+
+.selectize-input {
+    position: relative;
+    z-index: 1;
+    box-sizing: border-box;
+}
+
+.selectize-input, .selectize-control.single .selectize-input.input-active {
+    background: #fff;
+}
+
+.selectize-dropdown, .selectize-input, .selectize-input input {
+    line-height: 25px;
+    -webkit-font-smoothing: inherit;
+}
+
+.selectize-input input {
+    font-size: 16px;
+    line-height: 1.5 !important;
+    text-align: start !important;
+}
+
+.selectize-input::after {
+    content: "\f107" !important;
+    display: block !important;
+    position: absolute !important;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+    right: 20px !important;
+    margin-top: 2px !important;
+    font-size: 18px !important;
+    width: unset !important;
+    height: unset !important;
+    border-style: unset !important;
+    border-width: unset !important;
+    border-color: #6f8ba4 !important;
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    -webkit-font-smoothing: antialiased;
+    display: var(--fa-display,inline-block);
+    font-style: normal;
+    font-variant: normal;
+    line-height: 1;
+    text-rendering: auto;
+}
+
+.selectize-dropdown {
+    border: none;
+    border-radius: 15px;
+    text-align: start;
+}
+
+.selectize-dropdown [data-selectable] {
+    font-size: 15px;
+    padding: 15px 20px;
+    border-radius: 10px;
+    text-align: start;
+}
